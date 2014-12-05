@@ -13,8 +13,8 @@ $aliases['dev'] = array(
 
 
 $aliases['live_drupal'] = array(
-	'uri'=> 'example.com',
-	'root' => '/home/denny/subdomains/live_drupal/public_html',
+	'uri'=> 'livedrupal.dennyyoung.ca',
+	'root' => '/home/denny/subdomains/livedrupal/public_html',
 	'remote-host'=> 'host.ccistudios.com',
 	'remote-user'=> 'denny',
 	'path-aliases'=> array(
