@@ -42,28 +42,32 @@ a:hover {
   margin-left: -35px;
   position: absolute; }
 
-.image {
-  overflow: hidden;
-  float: left;
-  width: 449px;
-  position: fixed;
-  padding-top: 3px; }
-
 p {
   line-height: 1.25em;
   font-size: 16px; }
+
+hr {
+  border-bottom: 1px;
+  border-left: 0;
+  border-right: 0; }
 
 h3, h4 {
   color: #233891;
   padding: 20px 0px;
   font-weight: 300; }
 
-h1 {
+em {
+  color: #233891; }
+
+#page-title {
   text-transform: lowercase;
   color: #233891;
   font-size: 62px;
-  margin: .76em 0 .29em;
-  font-weight: 300; }
+  margin-top: 50px;
+  font-weight: 300;
+  width: 567px;
+  float: left;
+  padding-left: 453px; }
 
 h2, h2 a {
   padding: 20px 0px;
@@ -98,9 +102,7 @@ h2, h2 a {
     color: #233891; }
   #sidebar ul.menu {
     line-height: 50px;
-    margin-left: 150px;
     margin-top: 80px;
-    margin-right: 150px;
     border-top: 2px solid #d9d9d9;
     border-bottom: 2px solid #d9d9d9; }
     #sidebar ul.menu li {
@@ -146,7 +148,7 @@ h2, h2 a {
   clear: left; }
 
 .top-quotes {
-  padding: 0px 50px 0px 20px; }
+  padding-left: 23px; }
 
 #content {
   padding-top: 60px; }
@@ -156,22 +158,14 @@ h2, h2 a {
 .italic-content .work-position p {
   color: black; }
 
-.body-content {
-  float: right;
-  width: 570px; }
-  .body-content a {
-    color: #4edb4b; }
-  .body-content .arial-content p {
-    font-size: 16px;
-    font-family: Arial; }
-
 .view-watch-denny {
-  padding-top: 20px; }
+  padding-top: 40px; }
   .view-watch-denny .node-readmore {
     display: none; }
+  .view-watch-denny .view-content {
+    margin: 0 50px; }
   .view-watch-denny h1 {
-    text-align: right;
-    padding-right: 250px; }
+    text-align: center; }
   .view-watch-denny h2 {
     display: none; }
   .view-watch-denny .views-row {
@@ -184,7 +178,40 @@ h2, h2 a {
 
 #cartoon-home {
   float: right;
-  margin-top: -100px; }
+  margin-top: -140px; }
 
 #block-block-2 {
   margin-left: -45px; }
+
+.node-page .field-label {
+  display: none; }
+.node-page .field-name-field-image-denny {
+  overflow: hidden;
+  position: fixed;
+  padding-top: 3px; }
+.node-page .field-name-body {
+  float: left;
+  width: 500px;
+  margin-top: 20px;
+  padding-left: 460px; }
+  .node-page .field-name-body a {
+    color: #4edb4b; }
+  .node-page .field-name-body .arial-content p {
+    font-size: 16px;
+    font-family: Arial; }
+.node-page .page-watch-denny .field-name-body {
+  float: none;
+  width: 100%; }
+
+#block-system-main-menu {
+  width: 212px;
+  margin-left: 100px; }
+
+.page-watch-denny #page-title {
+  width: 100%;
+  float: none;
+  text-align: center;
+  padding-left: 0; }
+
+.rteindent1 {
+  margin-left: 13px; }

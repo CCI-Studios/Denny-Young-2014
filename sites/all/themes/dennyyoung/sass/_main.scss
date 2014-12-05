@@ -9,7 +9,7 @@ body
 a,
 a:visited,
 a:active
-{
+{ 
   text-decoration:none;
   color:black;
 }
@@ -23,10 +23,12 @@ a:hover
 {
   float:left;
 }
+
 .right
 {
   float:right;
 }
+
 #main-wrapper > div
 {
   max-width:1024px;
@@ -48,19 +50,17 @@ a:hover
 
 }
 
-.image
-{
-  overflow: hidden;
-  float: left;
-  width: 449px;
-  position: fixed;
-  padding-top:3px;
-}
-
 p
 {
   line-height: 1.25em;
   font-size:16px;
+}
+
+hr
+{ 
+  border-bottom:1px;
+  border-left:0;
+  border-right:0;
 }
 
 h3,h4
@@ -71,13 +71,21 @@ h3,h4
 
 }
 
-h1
+em
+{
+  color:$blue;
+}
+
+#page-title
 {
   text-transform:lowercase;
   color: $blue;
   font-size: 62px;
-    margin: .76em 0 .29em;
+  margin-top:50px;
   font-weight: 300;
+  width:567px;
+  float: left;
+  padding-left:453px;
 }
 
 h2,h2 a
@@ -130,9 +138,7 @@ h2,h2 a
   ul.menu
   {
     line-height: 50px;
-    margin-left: 150px;
     margin-top: 80px;
-    margin-right: 150px;
     border-top:2px solid #d9d9d9;
     border-bottom:2px solid #d9d9d9;
    
@@ -214,7 +220,7 @@ h2,h2 a
 
 .top-quotes
 {
-  padding: 0px 50px 0px 20px;
+  padding-left:23px;
 }
 
 #content
@@ -235,38 +241,24 @@ h2,h2 a
   }
 }
 
-.body-content
-{ 
-  float: right;
-  width: 570px;
-
-  a
-  {
-    color:$green;
-  }
-
-
- .arial-content p
-  {
-    font-size: 16px;
-    font-family: Arial;
-  }
-}
-
 .view-watch-denny
 { 
 
-  padding-top:20px;
+  padding-top:40px;
 
   .node-readmore
   {
     display: none;
   }
 
+  .view-content
+  {
+    margin:0 50px;
+  }
+
   h1
   {
-    text-align: right;
-    padding-right: 250px;
+    text-align: center;
   }
 
   h2
@@ -290,10 +282,76 @@ h2,h2 a
 #cartoon-home
 {
   float: right;
-  margin-top: -100px;
+  margin-top: -140px;
 }
 
 #block-block-2
 {
   margin-left: -45px;
+}
+
+.node-page
+{ 
+
+  .field-label
+  {
+    display: none;
+  }
+  
+  .field-name-field-image-denny 
+  { 
+    overflow: hidden;
+    position: fixed;
+    padding-top:3px;
+  }
+
+  .field-name-body
+  {
+    float: left;
+    width: 500px;
+    margin-top: 20px;
+    padding-left:460px;
+
+    a
+    {
+      color:$green;
+    }
+
+   .arial-content p
+    {
+      font-size: 16px;
+      font-family: Arial;
+    }
+  }
+
+.page-watch-denny
+  {
+    .field-name-body
+    {
+      float: none;
+      width:100%;
+    }
+  }
+}
+
+#block-system-main-menu
+{
+  width: 212px;
+  margin-left: 100px;
+}
+
+.page-watch-denny 
+{
+  #page-title
+  {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding-left:0;
+  }
+}
+
+.rteindent1
+{
+  margin-left: 13px;
 }
