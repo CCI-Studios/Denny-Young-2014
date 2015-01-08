@@ -60,7 +60,7 @@ function denny_young_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'watch-denny';
+  $handler->display->display_options['path'] = 'watch-denny.html';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'watch denny';
   $handler->display->display_options['menu']['name'] = 'menu-inner-menu';
