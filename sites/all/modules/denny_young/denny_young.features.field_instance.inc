@@ -104,47 +104,43 @@ function denny_young_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-watch_denny-body'
-  $field_instances['node-watch_denny-body'] = array(
+  // Exported field_instance: 'node-watch_denny-field_youtube_video_id'
+  $field_instances['node-watch_denny-field_youtube_video_id'] = array(
     'bundle' => 'watch_denny',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Get the Video ID from the Youtube page URL which looks like: https://www.youtube.com/watch?v=VIDEOID&other=stuff.<br>
+For example: given https://www.youtube.com/watch?v=<strong>imkl58zd5ek</strong>&feature=related the Video ID is <strong>imkl58zd5ek</strong>.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => 0,
+    'field_name' => 'field_youtube_video_id',
+    'label' => 'Youtube Video ID',
+    'required' => 1,
     'settings' => array(
-      'display_summary' => 1,
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
+        'size' => 60,
       ),
-      'type' => 'text_textarea_with_summary',
+      'type' => 'text_textfield',
       'weight' => 31,
     ),
   );
@@ -152,6 +148,9 @@ function denny_young_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Get the Video ID from the Youtube page URL which looks like: https://www.youtube.com/watch?v=VIDEOID&other=stuff.<br>
+For example: given https://www.youtube.com/watch?v=<strong>imkl58zd5ek</strong>&feature=related the Video ID is <strong>imkl58zd5ek</strong>.');
+  t('Youtube Video ID');
   t('image denny');
 
   return $field_instances;
